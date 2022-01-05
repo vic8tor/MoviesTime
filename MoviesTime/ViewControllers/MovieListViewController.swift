@@ -8,10 +8,23 @@
 import UIKit
 
 class MovieListViewController: UITableViewController {
+    // MARK: - @IBOutlets
+    
+    // MARK: - Public Properties
+    var movie: [Movie] = []
+    
+    // MARK: - Private Properties
 
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - @IBActions
+    
+    // MARK: - Public Methods
+    
+    // MARK: - Private Methods
 
     // MARK: - Table view data source
 

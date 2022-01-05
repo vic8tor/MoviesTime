@@ -19,6 +19,7 @@
 		57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3C72784EED5007D3D03 /* DataManager.swift */; };
 		57A7B3CB2784EEEC007D3D03 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3CA2784EEEC007D3D03 /* Model.swift */; };
 		57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */; };
+		57BCFC222786046F00BCBA9C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BCFC212786046F00BCBA9C /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		57A7B3C72784EED5007D3D03 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		57A7B3CA2784EEEC007D3D03 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		57BCFC212786046F00BCBA9C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				57A7B3B32784ED1E007D3D03 /* ViewController.swift */,
+				57BCFC212786046F00BCBA9C /* TabBarViewController.swift */,
 				57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */,
 			);
 			path = ViewControllers;
@@ -210,6 +213,7 @@
 				1E82B64B27860AE800F493B1 /* ModelUser.swift in Sources */,
 				57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */,
 				57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */,
+				57BCFC222786046F00BCBA9C /* TabBarViewController.swift in Sources */,
 				57A7B3B02784ED1E007D3D03 /* AppDelegate.swift in Sources */,
 				57A7B3B22784ED1E007D3D03 /* SceneDelegate.swift in Sources */,
 				1E82B6452785DB8E00F493B1 /* DataUser.swift in Sources */,
