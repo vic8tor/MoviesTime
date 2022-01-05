@@ -15,7 +15,7 @@ struct Movie {
         Float.random(in: 1...10)
     }
     var image: String {
-        "\(name) + \(year)"
+        "\(name) - \(year)"
     }
     static func getMovie() -> [Movie] {
         var movies: [Movie] = []
