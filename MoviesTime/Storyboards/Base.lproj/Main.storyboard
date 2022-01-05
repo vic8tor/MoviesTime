@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="588" y="-285"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="3ps-eE-EAd">
             <objects>
-                <tabBarController id="dlv-K4-xZC" sceneMemberID="viewController">
+                <tabBarController id="dlv-K4-xZC" customClass="TabBarViewController" customModule="MoviesTime" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4Vi-S1-FX5"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z2y-NW-QD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

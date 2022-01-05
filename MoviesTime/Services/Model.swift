@@ -17,7 +17,22 @@ struct Movie {
     var image: String {
         "\(name) + \(year)"
     }
+    static func getMovie() -> [Movie] {
+        var movies: [Movie] = []
+        
+        let name = DataManager.shared.names
+        let genre = DataManager.shared.genre
+        let year = DataManager.shared.years
+        
+        let iteration = min(
+            name.count,
+            genre.count,
+            year.count
+        )
     
-    
-    
+        for index in 1..<iteration {
+            movies.append(Movie(name: name[index], genre: genre[index], year: year[index]))
+        }
+    return movies
+    }
 }
