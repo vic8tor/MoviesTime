@@ -10,7 +10,14 @@ import Foundation
 struct Movie {
     let name: String
     let genre: String
-    let image: String
-    let raiting: Float
+    let year: String
+    var raiting: Float {
+        Float.random(in: 1...10)
+    }
+    var image: String {
+        "\(name) + \(year)"
+    }
+    
+    
     
 }
