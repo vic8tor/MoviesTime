@@ -13,7 +13,7 @@ class DataUser {
     
     let surnames = ["Rauko", "", "Bruyko"]
     
-    let password = ["123", "123", "123"]
+    let password = ["1", "2", "3"]
     
     private init() {}
 }

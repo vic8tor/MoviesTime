@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */; };
 		1E82B6452785DB8E00F493B1 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6442785DB8E00F493B1 /* DataUser.swift */; };
 		1E82B6532786171000F493B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6522786171000F493B1 /* LoginViewController.swift */; };
 		1E82B65A2786DB6C00F493B1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6592786DB6C00F493B1 /* UserModel.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		1E82B6442785DB8E00F493B1 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		1E82B6522786171000F493B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E82B6592786DB6C00F493B1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1E82B6522786171000F493B1 /* LoginViewController.swift */,
+				1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */,
 				57A7B3B32784ED1E007D3D03 /* ViewController.swift */,
 				57BCFC212786046F00BCBA9C /* TabBarViewController.swift */,
 				57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */,
@@ -209,6 +212,7 @@
 			files = (
 				57A7B3CB2784EEEC007D3D03 /* Model.swift in Sources */,
 				57A7B3B42784ED1E007D3D03 /* ViewController.swift in Sources */,
+				1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */,
 				57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */,
 				57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */,
 				57BCFC222786046F00BCBA9C /* TabBarViewController.swift in Sources */,

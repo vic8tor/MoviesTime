@@ -12,12 +12,15 @@ class MovieListViewController: UITableViewController {
     
     // MARK: - Public Properties
     var movie: [Movie] = []
+    var userName: String!
     
     // MARK: - Private Properties
 
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.window?.rootViewController?.title = userName
+        
     }
     
     // MARK: - @IBActions
