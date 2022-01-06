@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userTextField: UITextField!
     
     private var users = User.getUserList()
+    private var movie = Movie.getMovie()
     private var pickerView = UIPickerView()
     
     override func viewDidLoad() {
@@ -27,7 +28,7 @@ class LoginViewController: UIViewController {
         
         for viewController in tabBarController.viewControllers ?? [] {
             if let movieListVS = viewController as? MovieListViewController {
-              movieListVS.userName = userTextField.text
+              movieListVS.movie = movie
             }
         }
     }
