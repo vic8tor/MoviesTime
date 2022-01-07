@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E82B6452785DB8E00F493B1 /* DataUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6442785DB8E00F493B1 /* DataUsers.swift */; };
+		1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */; };
+		1E82B6452785DB8E00F493B1 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6442785DB8E00F493B1 /* DataUser.swift */; };
+		1E82B6532786171000F493B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6522786171000F493B1 /* LoginViewController.swift */; };
+		1E82B65A2786DB6C00F493B1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6592786DB6C00F493B1 /* UserModel.swift */; };
 		57A7B3B02784ED1E007D3D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3AF2784ED1E007D3D03 /* AppDelegate.swift */; };
 		57A7B3B22784ED1E007D3D03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3B12784ED1E007D3D03 /* SceneDelegate.swift */; };
 		57A7B3B42784ED1E007D3D03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3B32784ED1E007D3D03 /* ViewController.swift */; };
@@ -21,7 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E82B6442785DB8E00F493B1 /* DataUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsers.swift; sourceTree = "<group>"; };
+		1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
+		1E82B6442785DB8E00F493B1 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
+		1E82B6522786171000F493B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E82B6592786DB6C00F493B1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		57A7B3AC2784ED1E007D3D03 /* MoviesTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A7B3AF2784ED1E007D3D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57A7B3B12784ED1E007D3D03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E82B64927860ABC00F493B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E82B6592786DB6C00F493B1 /* UserModel.swift */,
+				57A7B3CA2784EEEC007D3D03 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		57A7B3A32784ED1E007D3D03 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 				57A7B3C52784ED49007D3D03 /* Storyboards */,
 				57A7B3C42784ED3B007D3D03 /* ViewControllers */,
 				57A7B3C92784EEDB007D3D03 /* Services */,
+				1E82B64927860ABC00F493B1 /* Models */,
 				57A7B3C32784ED28007D3D03 /* SupportFiles */,
 				57A7B3C62784ED59007D3D03 /* Resources */,
 			);
@@ -88,6 +104,8 @@
 		57A7B3C42784ED3B007D3D03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E82B6522786171000F493B1 /* LoginViewController.swift */,
+				1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */,
 				57A7B3B32784ED1E007D3D03 /* ViewController.swift */,
 				57BCFC212786046F00BCBA9C /* TabBarViewController.swift */,
 				57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */,
@@ -116,8 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				57A7B3C72784EED5007D3D03 /* DataManager.swift */,
-				1E82B6442785DB8E00F493B1 /* DataUsers.swift */,
-				57A7B3CA2784EEEC007D3D03 /* Model.swift */,
+				1E82B6442785DB8E00F493B1 /* DataUser.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -195,12 +212,15 @@
 			files = (
 				57A7B3CB2784EEEC007D3D03 /* Model.swift in Sources */,
 				57A7B3B42784ED1E007D3D03 /* ViewController.swift in Sources */,
+				1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */,
 				57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */,
 				57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */,
 				57BCFC222786046F00BCBA9C /* TabBarViewController.swift in Sources */,
 				57A7B3B02784ED1E007D3D03 /* AppDelegate.swift in Sources */,
 				57A7B3B22784ED1E007D3D03 /* SceneDelegate.swift in Sources */,
-				1E82B6452785DB8E00F493B1 /* DataUsers.swift in Sources */,
+				1E82B6532786171000F493B1 /* LoginViewController.swift in Sources */,
+				1E82B65A2786DB6C00F493B1 /* UserModel.swift in Sources */,
+				1E82B6452785DB8E00F493B1 /* DataUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HT3STQ75T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoviesTime/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,6 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HT3STQ75T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoviesTime/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
