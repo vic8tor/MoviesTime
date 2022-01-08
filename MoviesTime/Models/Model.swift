@@ -9,7 +9,7 @@ import Foundation
 
 struct Movie {
     let name: String
-    let genre: [String]
+    let genre: String
     let image: String
     let desctiption: String
     var raiting: Float {
@@ -37,9 +37,14 @@ struct Movie {
         )
     
         for index in 1..<iteration {
-            movies.append(Movie(name: name[index], genre: genre[index], image: image[index]  , desctiption: description[index]))
+            movies.append(
+                Movie(name: name[index],
+                      genre: genre[index],
+                      image: image[index],
+                      desctiption: description[index]))
         }
     return movies
     }
     
 }
+
