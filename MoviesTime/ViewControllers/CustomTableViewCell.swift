@@ -8,12 +8,15 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
+    // MARK: - @IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var raitingLabel: UILabel!
     @IBOutlet weak var imageOfMovies: UIImageView!
+
+
+    // MARK: - Override Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +25,11 @@ class CustomTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    
+        
     }
-
+    // MARK: - Public Methods
+    
+    // MARK: - Private Methods
 
 }
