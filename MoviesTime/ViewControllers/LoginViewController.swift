@@ -89,6 +89,10 @@ extension LoginViewController {
         userTextField.delegate = self
         passwordTextField.delegate = self
         userTextField.inputView = pickerView
+        userTextField.autocorrectionType = .no
+        userTextField.smartInsertDeleteType = .no
+        passwordTextField.isSecureTextEntry = true
+
     }
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
