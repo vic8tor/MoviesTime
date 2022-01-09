@@ -29,6 +29,8 @@ class LoginViewController: UIViewController {
         for viewController in tabBarController.viewControllers ?? [] {
             if let movieListVS = viewController as? MovieListViewController {
               movieListVS.movie = movie
+            } else if let randomVS = viewController as? RandomMovieViewController {
+                randomVS.movie = movie
             }
         }
     }

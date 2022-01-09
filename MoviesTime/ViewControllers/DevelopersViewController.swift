@@ -13,7 +13,13 @@ class DevelopersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        namesLabel.text = "Viktor Savko \n\n Alex Rauko"
+        setText()
     }
     
+}
+
+extension DevelopersViewController {
+    func setText() {
+        namesLabel.text = "Евгения, привет🙂!\nПоздравляем тебя с прошедшим праздниками!!\n\n\nНад приложением трудились:\n\nСавко Виктор Викторович,\n\nРавко Александр Александрович"
+    }
 }

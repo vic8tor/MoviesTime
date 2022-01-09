@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */; };
 		1E1B09E8278AE5AB003CDA0C /* RandomMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B09E7278AE5AB003CDA0C /* RandomMovieViewController.swift */; };
+		1E1B09EA278AE959003CDA0C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B09E9278AE959003CDA0C /* CustomTableViewCell.swift */; };
 		1E82B6452785DB8E00F493B1 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6442785DB8E00F493B1 /* DataUser.swift */; };
 		1E82B6532786171000F493B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6522786171000F493B1 /* LoginViewController.swift */; };
 		1E82B65A2786DB6C00F493B1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82B6592786DB6C00F493B1 /* UserModel.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		1E1B09E7278AE5AB003CDA0C /* RandomMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMovieViewController.swift; sourceTree = "<group>"; };
+		1E1B09E9278AE959003CDA0C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1E82B6442785DB8E00F493B1 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		1E82B6522786171000F493B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1E82B6592786DB6C00F493B1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -107,8 +109,9 @@
 				1E82B6522786171000F493B1 /* LoginViewController.swift */,
 				57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */,
 				57A7B3B32784ED1E007D3D03 /* DetailViewController.swift */,
-				1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */,
 				1E1B09E7278AE5AB003CDA0C /* RandomMovieViewController.swift */,
+				1E1B09E9278AE959003CDA0C /* CustomTableViewCell.swift */,
+				1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */,
 				57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */,
 				57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */,
+				1E1B09EA278AE959003CDA0C /* CustomTableViewCell.swift in Sources */,
 				57A7B3B02784ED1E007D3D03 /* AppDelegate.swift in Sources */,
 				57A7B3B22784ED1E007D3D03 /* SceneDelegate.swift in Sources */,
 				1E82B6532786171000F493B1 /* LoginViewController.swift in Sources */,

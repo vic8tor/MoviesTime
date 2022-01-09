@@ -17,15 +17,18 @@ class RandomMovieViewController: UIViewController {
     @IBOutlet weak var summaryTextView: UITextView!
     
     // MARK: - Public Properties
-    var movie: Movie!
+    var movie: [Movie] = []
+    private var randomMovie: Movie! {
+        movie.randomElement()
+    }
     
     // MARK: - Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        wideImage.image = UIImage(named: movie.imageWide)
-        titleMovieLabel.text = movie.name
-        genreMovieLabel.text = movie.genre
-        raitingMovieLabel.text = "⭐️ " + movie.raiting
-        summaryTextView.text = movie.desctiption
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        wideImage.image = UIImage(named: randomMovie.imageWide)
+        titleMovieLabel.text = randomMovie.name
+        genreMovieLabel.text = randomMovie.genre
+        raitingMovieLabel.text = "⭐️ " + randomMovie.raiting
+        summaryTextView.text = randomMovie.desctiption
     }
 }

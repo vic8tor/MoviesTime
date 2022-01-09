@@ -8,14 +8,11 @@
 import UIKit
 
 class MovieListViewController: UITableViewController {
-    // MARK: - @IBOutlets
     
     // MARK: - Public Properties
     var movie: [Movie] = []
-    
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         movie.count
     }
@@ -25,11 +22,8 @@ class MovieListViewController: UITableViewController {
     
         cell.titleLabel.text = movie[indexPath.row].name
         cell.genreLabel.text = movie[indexPath.row].genre
-        
         cell.summaryLabel.text = movie[indexPath.row].desctiption
-        
         cell.imageOfMovies.image = UIImage(named: movie[indexPath.row].imageSmall)
-        
         cell.raitingLabel.text = movie[indexPath.row].raiting
         return cell
     }
@@ -37,10 +31,9 @@ class MovieListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow?.row else { return }
+        
         let movies = movie[indexPath]
         detailVC.movie = movies
     }
-   
-    
     
 }
