@@ -12,9 +12,8 @@ struct Movie {
     let genre: String
     let image: String
     let desctiption: String
-    var raiting: Float {
-        Float.random(in: 7...10)
-    }
+    var raiting: String
+    
     var imageSmall: String {
         image + "-small"
     }
@@ -41,7 +40,8 @@ struct Movie {
                 Movie(name: name[index],
                       genre: genre[index],
                       image: image[index],
-                      desctiption: description[index]))
+                      desctiption: description[index],
+                      raiting: String(format: "%.1f", Float.random(in: 7...10))))
         }
     return movies
     }

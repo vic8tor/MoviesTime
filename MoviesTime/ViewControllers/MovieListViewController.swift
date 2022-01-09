@@ -13,18 +13,6 @@ class MovieListViewController: UITableViewController {
     // MARK: - Public Properties
     var movie: [Movie] = []
     
-    // MARK: - Private Properties
-
-    // MARK: - Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    // MARK: - @IBActions
-    
-    // MARK: - Public Methods
-    
-    // MARK: - Private Methods
 
     // MARK: - Table view data source
 
@@ -42,7 +30,7 @@ class MovieListViewController: UITableViewController {
         
         cell.imageOfMovies.image = UIImage(named: movie[indexPath.row].imageSmall)
         
-        cell.raitingLabel.text = String(round(10 * movie[indexPath.row].raiting) / 10)
+        cell.raitingLabel.text = movie[indexPath.row].raiting
         return cell
     }
 

@@ -27,7 +27,13 @@ extension User {
         let surnames = DataUser.shared.surnames
         let password = DataUser.shared.password
         
-        for index in 0..<names.count {
+        let iteration = min(
+            names.count,
+            surnames.count,
+            password.count
+        )    
+        
+        for index in 0..<iteration {
             let user = User(name: names[index],
                             surname: surnames[index],
                             password: password[index])

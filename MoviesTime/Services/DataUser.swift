@@ -9,10 +9,8 @@ class DataUser {
 
     static let shared = DataUser()
     
-    let names = ["Alex", "Victor", "Eugenya"]
-    
+    let names = ["Alex", "Victor", "Eugenya"]    
     let surnames = ["Rauko", "Savko", "Bruyko"]
-    
     let password = ["1", "2", "3"]
     
     private init() {}

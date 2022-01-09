@@ -133,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="RRw-SR-vmc" kind="relationship" relationship="viewControllers" id="H1v-2x-pgm"/>
@@ -147,6 +147,7 @@
         <!--Item-->
         <scene sceneID="27R-k0-rlc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRa-E6-sfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="x7k-Hg-e4v" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Mff-LM-cWS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
@@ -169,7 +170,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="HWD-si-5Gs"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dRa-E6-sfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1497" y="394"/>
         </scene>
@@ -375,7 +375,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cnC-YR-C2A"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="aWJ-nA-xIX" firstAttribute="leading" secondItem="cnC-YR-C2A" secondAttribute="leading" constant="35" id="iNw-kH-dEE"/>
                             <constraint firstItem="cnC-YR-C2A" firstAttribute="trailing" secondItem="aWJ-nA-xIX" secondAttribute="trailing" constant="20" id="oxW-JA-NfR"/>
@@ -447,6 +447,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>

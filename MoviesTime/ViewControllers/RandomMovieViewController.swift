@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  RandomMovieViewController.swift
 //  MoviesTime
 //
-//  Created by Victor on 05.01.2022.
+//  Created by Aliaksandr Rauko on 9.01.22.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    
+class RandomMovieViewController: UIViewController {
+
     // MARK: - @IBOutlets
     @IBOutlet weak var wideImage: UIImageView!
     @IBOutlet weak var titleMovieLabel: UILabel!
@@ -29,4 +29,3 @@ class DetailViewController: UIViewController {
         summaryTextView.text = movie.desctiption
     }
 }
-

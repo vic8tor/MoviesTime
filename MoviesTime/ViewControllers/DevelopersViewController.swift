@@ -13,9 +13,7 @@ class DevelopersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        namesLabel.text = "Viktor \n\n Alex"
-
+        namesLabel.text = "Viktor Savko \n\n Alex Rauko"
     }
     
-
 }
