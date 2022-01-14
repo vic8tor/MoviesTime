@@ -41,16 +41,4 @@ class MovieListViewController: UITableViewController {
         let movies = movies[indexPath]
         detailVC.movies = movies
     }
-    
-    // MARK: - @IBActions
-    
-    // MARK: - Public Methods
-    
-    // MARK: - Private Methods
-
-    // MARK: - Table view data source
-
-
-    
-    
 }
