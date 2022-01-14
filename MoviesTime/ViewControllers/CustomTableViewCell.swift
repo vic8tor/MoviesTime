@@ -45,7 +45,4 @@ class CustomTableViewCell: UITableViewCell {
         }
         self.imageOfMovies.image = nil
     }
-    
-    // MARK: - Private Methods
-
 }

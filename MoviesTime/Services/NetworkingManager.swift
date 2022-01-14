@@ -13,7 +13,7 @@ class NetworkingManager {
 
     func fetchData(url: String, complition: @escaping(_ movie: MoviesData) -> Void) {
         guard let url = URL(string: url ) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _ , error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error descpription")
                 return
