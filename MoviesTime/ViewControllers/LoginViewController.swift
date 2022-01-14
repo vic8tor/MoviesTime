@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     // MARK: - Private Properties
     private var users = User.getUserList()
     private var pickerView = UIPickerView()
+    private var movieList = [Movie]()
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -28,10 +29,10 @@ class LoginViewController: UIViewController {
         guard let tabBArController = navigationVC.topViewController as? UITabBarController else { return }
         tabBArController.viewControllers?.forEach{
             if let movieListVC = $0 as? MovieListViewController {
-                let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=97fd25ac93042d4d2d469b66b1505de7"
-                NetworkingManager.shared.fetchData(url: url) { movie in
+                NetworkingManager.shared.fetchData(url: Url.moviesTB.rawValue) { movie in
                     movieListVC.movies = movie.movies
-                    }
+                    movieListVC.tableView.reloadData()
+                }
             }
         }
     }
@@ -44,8 +45,8 @@ class LoginViewController: UIViewController {
             if user.fullName == userTextField.text
                 && user.password == passwordTextField.text {
                 authentication = true
+                }
             }
-        }
         if !authentication {
             showAlert(title: "Invalid login or password!",
                       message: "Please, enter correct login and password!",
