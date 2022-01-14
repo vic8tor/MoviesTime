@@ -18,7 +18,6 @@
 		57A7B3B72784ED1E007D3D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A7B3B52784ED1E007D3D03 /* Main.storyboard */; };
 		57A7B3B92784ED21007D3D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A7B3B82784ED21007D3D03 /* Assets.xcassets */; };
 		57A7B3BC2784ED21007D3D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A7B3BA2784ED21007D3D03 /* LaunchScreen.storyboard */; };
-		57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3C72784EED5007D3D03 /* DataManager.swift */; };
 		57A7B3CB2784EEEC007D3D03 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3CA2784EEEC007D3D03 /* MoviesModel.swift */; };
 		57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */; };
 		57BCFC482788C70700BCBA9C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BCFC472788C70700BCBA9C /* CustomTableViewCell.swift */; };
@@ -38,7 +37,6 @@
 		57A7B3B82784ED21007D3D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A7B3BB2784ED21007D3D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A7B3BD2784ED21007D3D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57A7B3C72784EED5007D3D03 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		57A7B3CA2784EEEC007D3D03 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		57BCFC472788C70700BCBA9C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		57A7B3C92784EEDB007D3D03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				57A7B3C72784EED5007D3D03 /* DataManager.swift */,
 				1E82B6442785DB8E00F493B1 /* DataUser.swift */,
 				5792F0A727918FF4002D6F76 /* NetworkingManager.swift */,
 			);
@@ -216,7 +213,6 @@
 				57A7B3CB2784EEEC007D3D03 /* MoviesModel.swift in Sources */,
 				57A7B3B42784ED1E007D3D03 /* DetailViewController.swift in Sources */,
 				1E1B09E627872C22003CDA0C /* DevelopersViewController.swift in Sources */,
-				57A7B3C82784EED5007D3D03 /* DataManager.swift in Sources */,
 				57A7B3CD27858A20007D3D03 /* MovieListViewController.swift in Sources */,
 				57BCFC482788C70700BCBA9C /* CustomTableViewCell.swift in Sources */,
 				57A7B3B02784ED1E007D3D03 /* AppDelegate.swift in Sources */,
