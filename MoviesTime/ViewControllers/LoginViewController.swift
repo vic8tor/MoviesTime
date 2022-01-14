@@ -8,30 +8,34 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    // MARK: - @IBOutlets
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userTextField: UITextField!
     
+    // MARK: - Private Properties
     private var users = User.getUserList()
-    private var movie = Movie.getMovie()
     private var pickerView = UIPickerView()
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         makeSettings()
-    }
+        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let navigationVC = segue.destination as? UINavigationController else { return}
-        guard let tabBarController = navigationVC.topViewController as? UITabBarController else { return}
-        
-        for viewController in tabBarController.viewControllers ?? [] {
-            if let movieListVS = viewController as? MovieListViewController {
-              movieListVS.movie = movie
+        guard let navigationVC = segue.destination as? UINavigationController else { return }
+        guard let tabBArController = navigationVC.topViewController as? UITabBarController else { return }
+        tabBArController.viewControllers?.forEach{
+            if let movieListVC = $0 as? MovieListViewController {
+                let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=97fd25ac93042d4d2d469b66b1505de7"
+                NetworkingManager.shared.fetchData(url: url) { movie in
+                    movieListVC.movies = movie.movies
+                    }
             }
         }
     }
+    // MARK: - @IBActions
     
     @IBAction func logInAction() {
         var authentication = false
@@ -78,7 +82,7 @@ extension LoginViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-// MARK: - private Methods
+// MARK: - Private Methods
 extension LoginViewController {
     
     private func makeSettings() {
