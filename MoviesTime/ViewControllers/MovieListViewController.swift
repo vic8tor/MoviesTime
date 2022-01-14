@@ -8,18 +8,37 @@
 import UIKit
 
 class MovieListViewController: UITableViewController {
-    // MARK: - @IBOutlets
-    
     // MARK: - Public Properties
-    var movie: [Movie] = []
+    var movies = [Movie]()
     
     // MARK: - Private Properties
 
     // MARK: - Override Methods
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(movies)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(movies)
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        movies.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       let cell = tableView.dequeueReusableCell(withIdentifier: "movieListCell", for: indexPath) as! CustomTableViewCell
+        let moviesOnCell = movies[indexPath.row]
+        cell.configure(with: moviesOnCell)
+        
+        return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
+    }
+   
     // MARK: - @IBActions
     
     // MARK: - Public Methods
@@ -28,31 +47,7 @@ class MovieListViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        movie.count
-    }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "movieListCell", for: indexPath) as! CustomTableViewCell
-    
-        cell.titleLabel.text = movie[indexPath.row].name
-        cell.genreLabel.text = movie[indexPath.row].genre
-        
-        cell.summaryLabel.text = movie[indexPath.row].desctiption
-        
-        cell.imageOfMovies.image = UIImage(named: movie[indexPath.row].imageSmall)
-        
-        cell.raitingLabel.text = String(round(10 * movie[indexPath.row].raiting) / 10)
-        return cell
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailVC = segue.destination as? DetailViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow?.row else { return }
-        let movies = movie[indexPath]
-        detailVC.movie = movies
-    }
-   
     
     
 }

@@ -108,8 +108,8 @@
 			children = (
 				1E82B6522786171000F493B1 /* LoginViewController.swift */,
 				57A7B3CC27858A1F007D3D03 /* MovieListViewController.swift */,
-				57A7B3B32784ED1E007D3D03 /* DetailViewController.swift */,
 				57BCFC472788C70700BCBA9C /* CustomTableViewCell.swift */,
+				57A7B3B32784ED1E007D3D03 /* DetailViewController.swift */,
 				1E1B09E527872C22003CDA0C /* DevelopersViewController.swift */,
 			);
 			path = ViewControllers;

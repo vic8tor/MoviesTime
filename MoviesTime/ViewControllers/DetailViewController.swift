@@ -21,11 +21,7 @@ class DetailViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        wideImage.image = UIImage(named: movie.imageWide)
-        titleMovieLabel.text = movie.name
-        genreMovieLabel.text = movie.genre
-        raitingMovieLabel.text = "⭐️ " + String(round(10 * movie.raiting) / 10)
-        summaryTextView.text = movie.desctiption
+
     }
 
     
