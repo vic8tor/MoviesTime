@@ -47,13 +47,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-S5-9Qr">
-                                            <rect key="frame" x="110" y="16" width="224" height="27.5"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                            <rect key="frame" x="110" y="16" width="224" height="25"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbJ-ap-VQ2">
-                                            <rect key="frame" x="110" y="47.5" width="218" height="20.5"/>
+                                            <rect key="frame" x="110" y="45" width="218" height="20.5"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                         <imageReference key="image" image="film" catalog="system" symbolScale="large" renderingMode="hierarchical">
                             <hierarchicalColors>
                                 <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color systemColor="secondaryLabelColor"/>
+                                <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color systemColor="tertiaryLabelColor"/>
                             </hierarchicalColors>
                         </imageReference>
@@ -255,8 +255,8 @@
                     <navigationItem key="navigationItem" id="mbP-wP-xNn"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="genreMovieLabel" destination="wXG-k7-gKC" id="YG9-1q-S6e"/>
                         <outlet property="raitingMovieLabel" destination="w01-As-tQa" id="z5a-mL-lPf"/>
+                        <outlet property="releaseDateLabel" destination="wXG-k7-gKC" id="YG9-1q-S6e"/>
                         <outlet property="summaryTextView" destination="Qhq-Ph-JbX" id="0Ww-rY-Z1D"/>
                         <outlet property="titleMovieLabel" destination="fCu-90-E3e" id="Dbt-B0-YlD"/>
                         <outlet property="wideImage" destination="eqe-12-KW2" id="Ujs-2I-TFQ"/>
@@ -443,9 +443,6 @@
         <image name="star-1" width="1280" height="1280"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

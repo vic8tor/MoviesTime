@@ -27,6 +27,7 @@ class CustomTableViewCell: UITableViewCell {
 
     }
     // MARK: - Public Methods
+
     func configure(with movie: Movie) {
         titleLabel.text = movie.title
         yearLabel.text = movie.year
@@ -42,7 +43,7 @@ class CustomTableViewCell: UITableViewCell {
             
             self.imageOfMovies.image = UIImage(data: imageData)
         }
-//        self.imageOfMovies.image = nil
+        self.imageOfMovies.image = nil
     }
     
     // MARK: - Private Methods

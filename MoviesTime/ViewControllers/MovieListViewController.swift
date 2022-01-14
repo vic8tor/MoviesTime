@@ -34,7 +34,14 @@ class MovieListViewController: UITableViewController {
         
         return cell
     }
-   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow?.row else { return }
+    
+        let movies = movies[indexPath]
+        detailVC.movies = movies
+    }
+    
     // MARK: - @IBActions
     
     // MARK: - Public Methods
