@@ -14,14 +14,6 @@ class MovieListViewController: UITableViewController {
     // MARK: - Private Properties
 
     // MARK: - Override Methods
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print(movies)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(movies)
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         movies.count
@@ -40,5 +32,17 @@ class MovieListViewController: UITableViewController {
     
         let movies = movies[indexPath]
         detailVC.movies = movies
+    }
+    // MARK: - Public Methods
+    func fetchFilms() {
+        NetworkingManager.shared.fetchData(from: Url.moviesTB.rawValue) { result in
+            switch result {
+            case .success(let moviesList):
+                self.movies = moviesList.movies
+                self.tableView.reloadData()
+            case .failure(let error):
+                print("Error processing JSON data: \(error)")
+            }
+        }
     }
 }

@@ -29,13 +29,10 @@ class LoginViewController: UIViewController {
         guard let tabBArController = navigationVC.topViewController as? UITabBarController else { return }
         tabBArController.viewControllers?.forEach{
             if let movieListVC = $0 as? MovieListViewController {
-                NetworkingManager.shared.fetchData(url: Url.moviesTB.rawValue) { movie in
-                    movieListVC.movies = movie.movies
-                    movieListVC.tableView.reloadData()
+                movieListVC.fetchFilms()
                 }
             }
         }
-    }
     // MARK: - @IBActions
     
     @IBAction func logInAction() {
