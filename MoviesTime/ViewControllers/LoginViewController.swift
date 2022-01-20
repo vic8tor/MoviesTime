@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         guard let tabBArController = navigationVC.topViewController as? UITabBarController else { return }
         tabBArController.viewControllers?.forEach{
             if let movieListVC = $0 as? MovieListViewController {
-                movieListVC.fetchFilms()
+                movieListVC.fetchDataWithAlamofire()
                 }
             }
         }

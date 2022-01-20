@@ -5,6 +5,7 @@
 //  Created by Victor on 05.01.2022.
 //
 
+import Alamofire
 import UIKit
 
 class MovieListViewController: UITableViewController {
@@ -45,4 +46,23 @@ class MovieListViewController: UITableViewController {
             }
         }
     }
+    
+    func fetchDataWithAlamofire() {
+        AF.request(Url.moviesTB.rawValue)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    self.movies = Movie.getMovie(from: value)
+                    self.tableView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        
+    }
+    
+    
+    
 }
+

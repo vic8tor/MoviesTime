@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum NetworkError: Error {
     case invalidURL, noData, decodingError
 }
@@ -34,11 +35,5 @@ class NetworkingManager {
             }
         }.resume()
     }
-    
-//    func fetchDataWithAlamofire(from url: String, completion: ) {
-//        
-//    }
-    
-    
 }
 

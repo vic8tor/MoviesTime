@@ -23,6 +23,21 @@ struct Movie: Decodable {
     let overview: String?
     var rate: Double?
     
+    init(movie: [String: Any]) {
+    title = movie["title"] as? String
+    year = movie["release_date"] as? String
+    image = movie["poster_path"] as? String
+    wideImage = movie["backdrop_path"] as? String
+    overview = movie["overview"] as? String
+    rate = movie["vote_average"] as? Double
+    }
+    
+    static func getMovie(from value: Any) -> [Movie] {
+        guard let dataList = value as? [String: Any] else { return [] }
+        let moviesList = dataList.compactMap{ $0.value as? [[String: Any]]}.flatMap{$0}
+        return moviesList.compactMap{ Movie(movie: $0)}
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case title, overview
         case year = "release_date"
@@ -30,6 +45,7 @@ struct Movie: Decodable {
         case image = "poster_path"
         case wideImage = "backdrop_path"
     }
+    
 }
 
 enum Url: String {
