@@ -28,11 +28,13 @@ class LoginViewController: UIViewController {
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         guard let tabBArController = navigationVC.topViewController as? UITabBarController else { return }
         tabBArController.viewControllers?.forEach{
-            if let movieListVC = $0 as? MovieListViewController {
+            if let navigationVC2 = $0 as? UINavigationController {
+                if let movieListVC = navigationVC2.topViewController as? MovieListViewController {
                 movieListVC.fetchDataWithAlamofire()
                 }
             }
         }
+    }
     // MARK: - @IBActions
     
     @IBAction func logInAction() {

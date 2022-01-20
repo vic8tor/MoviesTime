@@ -37,7 +37,7 @@ class DetailViewController: UIViewController {
     private func imageDownload() {
         DispatchQueue.main.async {
             guard let image = self.movies.wideImage else { return }
-            let urlString = Url.imageUrl.rawValue + image
+            let urlString = Link.imageUrl.rawValue + image
         
             guard let url = URL(string: urlString) else { return }
             guard let imageData = try? Data(contentsOf: url) else { return }

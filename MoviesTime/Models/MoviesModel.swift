@@ -8,6 +8,7 @@
 import Foundation
 
 struct MoviesData: Decodable {
+//    let page: Int?
     let movies: [Movie]
     
     private enum CodingKeys: String, CodingKey {
@@ -48,8 +49,8 @@ struct Movie: Decodable {
     
 }
 
-enum Url: String {
-    case moviesTB = "https://api.themoviedb.org/3/movie/top_rated?api_key=97fd25ac93042d4d2d469b66b1505de7"
+enum Link: String {
+    case moviesTB = "https://api.themoviedb.org/3/movie/top_rated?api_key=97fd25ac93042d4d2d469b66b1505de7&page="
     case imageUrl = "https://image.tmdb.org/t/p/w300"
 }
 

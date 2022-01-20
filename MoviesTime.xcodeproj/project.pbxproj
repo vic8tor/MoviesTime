@@ -73,7 +73,6 @@
 				DC5D370F4EAD22EBDA94EA41 /* Pods-MoviesTime.debug.xcconfig */,
 				AF8A20E8AB2CD204860E7F4B /* Pods-MoviesTime.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
